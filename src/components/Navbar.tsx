@@ -125,15 +125,15 @@ export default function Navbar() {
           >
             <motion.span 
               animate={{ rotate: isMobileMenuOpen ? 45 : 0, y: isMobileMenuOpen ? 7.5 : 0 }}
-              className="w-6 h-0.5 bg-white rounded-full transition-all duration-300"
+              className="w-6 h-0.5 bg-black dark:bg-white rounded-full transition-colors duration-300"
             />
             <motion.span 
               animate={{ opacity: isMobileMenuOpen ? 0 : 1 }}
-              className="w-6 h-0.5 bg-white rounded-full transition-all duration-300"
+              className="w-6 h-0.5 bg-black dark:bg-white rounded-full transition-colors duration-300"
             />
             <motion.span 
               animate={{ rotate: isMobileMenuOpen ? -45 : 0, y: isMobileMenuOpen ? -7.5 : 0 }}
-              className="w-6 h-0.5 bg-white rounded-full transition-all duration-300"
+              className="w-6 h-0.5 bg-black dark:bg-white rounded-full transition-colors duration-300"
             />
           </button>
         </div>
