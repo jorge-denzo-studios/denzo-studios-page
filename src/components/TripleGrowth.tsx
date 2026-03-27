@@ -81,7 +81,7 @@ export default function TripleGrowth() {
 
             <div className="mt-12 pt-8 border-t border-[#E5E5EA] dark:border-white/5 flex items-center justify-between opacity-0 group-hover:opacity-100 transition-opacity duration-700">
                <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-[#8E8E93] dark:text-white/20">Metric Module 0{i+1}</span>
-               <div className={`w-2 h-2 rounded-full animate-pulse ${section.iconBg.split(' ')[0]}`} style={{ backgroundColor: section.gradient.match(/from-\[([^\]]+)\]/)[1] }} />
+               <div className={`w-2 h-2 rounded-full animate-pulse ${section.iconBg.split(' ')[0]}`} style={{ backgroundColor: section.gradient.match(/from-\[([^\]]+)\]/)?.[1] || "currentColor" }} />
             </div>
           </motion.div>
         ))}
