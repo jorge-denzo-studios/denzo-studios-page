@@ -62,7 +62,7 @@ export default function Navbar() {
             >
               <a 
                 href={link.href} 
-                className="hover:text-black dark:text-white transition-colors flex items-center gap-1"
+                className="hover:text-black dark:hover:text-white transition-colors flex items-center gap-1"
               >
                 {link.name}
                 {link.subServices && (
@@ -85,11 +85,11 @@ export default function Navbar() {
                           <a
                             key={sub.name}
                             href={sub.href}
-                            className="p-4 rounded-2xl hover:bg-black/5 dark:bg-white/5 transition-all text-black/80 dark:text-white/50 hover:text-black dark:text-white flex flex-col gap-3 group/item border border-transparent hover:border-black/10 dark:border-white/10"
+                            className="p-4 rounded-2xl hover:bg-black/5 dark:hover:bg-white/5 transition-all text-black/80 dark:text-white/50 hover:text-black dark:hover:text-white flex flex-col gap-3 group/item border border-transparent hover:border-black/10 dark:hover:border-white/10"
                           >
                             <motion.div 
                               whileHover={{ scale: 1.1, rotate: 5 }}
-                              className={`w-10 h-10 rounded-xl bg-black/5 dark:bg-white/5 flex items-center justify-center transition-all group-hover/item:bg-black/10 dark:bg-white/10 ${sub.color}`}
+                              className={`w-10 h-10 rounded-xl bg-black/5 dark:bg-white/5 flex items-center justify-center transition-all group-hover/item:bg-black/10 dark:group-hover/item:bg-white/10 ${sub.color}`}
                             >
                               <sub.icon className="w-5 h-5 group-hover/item:drop-shadow-[0_0_8px_currentColor]" />
                             </motion.div>
@@ -107,7 +107,7 @@ export default function Navbar() {
 
         {/* Right Actions */}
         <div className="flex items-center gap-4 relative z-50">
-          <a href="tel:8332002676" className="hidden md:flex items-center gap-2 text-black/90 dark:text-white/70 hover:text-black dark:text-white transition-colors text-sm">
+          <a href="tel:8332002676" className="hidden md:flex items-center gap-2 text-black/90 dark:text-white/70 hover:text-black dark:hover:text-white transition-colors text-sm">
             <Phone className="w-4 h-4 text-neon-cyan" />
             833-200-2676
           </a>

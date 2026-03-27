@@ -22,27 +22,27 @@ export default function Footer() {
         <div>
           <h4 className="font-bold text-black dark:text-white text-sm uppercase tracking-[0.2em] mb-8">Services</h4>
           <div className="flex flex-col gap-4 text-sm">
-            <a href="#ads" className="text-black/80 dark:text-white/40 hover:text-black dark:text-white transition-colors">Google & Meta Ads</a>
-            <a href="#seo" className="text-black/80 dark:text-white/40 hover:text-black dark:text-white transition-colors">SEO Optimization</a>
-            <a href="#ai" className="text-black/80 dark:text-white/40 hover:text-black dark:text-white transition-colors">AI Development</a>
-            <a href="#web" className="text-black/80 dark:text-white/40 hover:text-black dark:text-white transition-colors">Web Development</a>
+            <a href="#ads" className="text-black/80 dark:text-white/40 hover:text-black dark:hover:text-white transition-colors">Google & Meta Ads</a>
+            <a href="#seo" className="text-black/80 dark:text-white/40 hover:text-black dark:hover:text-white transition-colors">SEO Optimization</a>
+            <a href="#ai" className="text-black/80 dark:text-white/40 hover:text-black dark:hover:text-white transition-colors">AI Development</a>
+            <a href="#web" className="text-black/80 dark:text-white/40 hover:text-black dark:hover:text-white transition-colors">Web Development</a>
           </div>
         </div>
 
         <div>
           <h4 className="font-bold text-black dark:text-white text-sm uppercase tracking-[0.2em] mb-8">Company</h4>
           <div className="flex flex-col gap-4 text-sm">
-            <a href="#about" className="text-black/80 dark:text-white/40 hover:text-black dark:text-white transition-colors">About Us</a>
-            <a href="#" className="text-black/80 dark:text-white/40 hover:text-black dark:text-white transition-colors">Careers</a>
-            <a href="#" className="text-black/80 dark:text-white/40 hover:text-black dark:text-white transition-colors">Privacy Policy</a>
-            <a href="#" className="text-black/80 dark:text-white/40 hover:text-black dark:text-white transition-colors">Terms & Conditions</a>
+            <a href="#about" className="text-black/80 dark:text-white/40 hover:text-black dark:hover:text-white transition-colors">About Us</a>
+            <a href="#" className="text-black/80 dark:text-white/40 hover:text-black dark:hover:text-white transition-colors">Careers</a>
+            <a href="#" className="text-black/80 dark:text-white/40 hover:text-black dark:hover:text-white transition-colors">Privacy Policy</a>
+            <a href="#" className="text-black/80 dark:text-white/40 hover:text-black dark:hover:text-white transition-colors">Terms & Conditions</a>
           </div>
         </div>
 
         <div>
           <h4 className="font-bold text-black dark:text-white text-sm uppercase tracking-[0.2em] mb-8">Contact</h4>
           <div className="flex flex-col gap-4 text-sm text-black/80 dark:text-white/40">
-            <a href="tel:8332002676" className="flex items-center gap-3 hover:text-black dark:text-white transition-colors">
+            <a href="tel:8332002676" className="flex items-center gap-3 hover:text-black dark:hover:text-white transition-colors">
               <Phone className="w-4 h-4 text-neon-cyan" />
               833-200-2676
             </a>
