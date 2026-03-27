@@ -7,7 +7,9 @@ export default function VisualShowcase() {
   return (
     <section className="py-24 md:py-40 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto overflow-hidden">
       <div className="text-center mb-16 md:mb-20">
-        <span className="text-[#007AFF] dark:text-neon-cyan text-xs md:text-sm font-bold uppercase tracking-[0.5em] mb-4 block">ECOSYSTEM</span>
+        <div className="inline-flex items-center justify-center px-6 py-2 bg-[#E5F0FF] dark:bg-blue-900/20 border border-[#B3D4FF] dark:border-blue-700/30 rounded-full mb-8 shadow-sm">
+          <span className="text-[#007AFF] dark:text-neon-cyan text-[10px] font-bold uppercase tracking-[0.4em]">ECOSYSTEM</span>
+        </div>
         <h2 className="text-4xl md:text-6xl font-bold tracking-tight mb-2 text-black dark:text-white">
           The Interface of <span className="bg-gradient-to-r from-[#007AFF] to-[#7AB6FF] text-transparent bg-clip-text drop-shadow-sm">Future ROI.</span>
         </h2>

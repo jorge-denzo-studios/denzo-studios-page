@@ -47,7 +47,9 @@ export default function EcommerceTicker() {
   return (
     <div className="py-24 md:py-40 bg-white dark:bg-black/5 dark:bg-white/5 dark:bg-black/20 border-t border-black/5 dark:border-white/5 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 mb-16 md:mb-20 text-center">
-        <span className="text-xs md:text-sm font-bold uppercase tracking-[0.4em] bg-gradient-to-r from-[#FF9500] to-[#FFC566] text-transparent bg-clip-text">Integrations</span>
+        <div className="inline-flex items-center justify-center px-6 py-2 bg-[#FFF3E0] dark:bg-orange-900/20 border border-[#FFD699] dark:border-orange-700/30 rounded-full shadow-sm">
+          <span className="text-[10px] font-bold uppercase tracking-[0.4em] bg-gradient-to-r from-[#FF9500] to-[#FFC566] text-transparent bg-clip-text">Integrations</span>
+        </div>
       </div>
       
       <div className="flex flex-col gap-12">
