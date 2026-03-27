@@ -46,10 +46,12 @@ export default function Navbar() {
         }`}
       >
         {/* Logo */}
-        <div className="flex items-center gap-2 relative z-50">
-          <Sparkles className="w-5 h-5 text-neon-cyan" />
-          <span className="font-semibold tracking-tight text-lg">Denzo Studios Pro</span>
-        </div>
+        <a href="/" className="flex items-center relative z-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-neon-cyan rounded-md group">
+          <div className="relative flex items-center justify-center">
+            <img src="/logo.png" alt="Denzo Studios Logo" className="h-[56px] md:h-[72px] w-auto object-contain transition-all duration-300 dark:opacity-0 group-hover:scale-105" />
+            <div className="absolute inset-0 bg-gradient-to-r from-[#007AFF] to-[#7AB6FF] [mask-image:url(/logo.png)] [mask-size:contain] [mask-repeat:no-repeat] [mask-position:center] [-webkit-mask-image:url(/logo.png)] [-webkit-mask-size:contain] [-webkit-mask-repeat:no-repeat] [-webkit-mask-position:center] transition-all duration-300 opacity-0 dark:opacity-100 group-hover:scale-105" />
+          </div>
+        </a>
 
         {/* Desktop Links */}
         <div className="hidden lg:flex items-center gap-8 text-[10px] font-bold text-black/80 dark:text-white/60 uppercase tracking-[0.2em]">

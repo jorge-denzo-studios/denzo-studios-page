@@ -10,10 +10,12 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 relative z-10">
         
         <div className="lg:col-span-1">
-          <div className="flex items-center gap-2 mb-8">
-            <Sparkles className="w-6 h-6 text-neon-cyan" />
-            <span className="font-bold tracking-tight text-2xl">Denzo Studios Pro</span>
-          </div>
+          <a href="/" className="flex items-center mb-8 focus:outline-none focus-visible:ring-2 focus-visible:ring-neon-cyan rounded-md group">
+            <div className="relative flex items-center justify-center">
+              <img src="/logo.png" alt="Denzo Studios Logo" className="h-[72px] md:h-[88px] w-auto object-contain transition-all duration-300 dark:opacity-0 group-hover:scale-105" />
+              <div className="absolute inset-0 bg-gradient-to-r from-[#007AFF] to-[#7AB6FF] [mask-image:url(/logo.png)] [mask-size:contain] [mask-repeat:no-repeat] [mask-position:center] [-webkit-mask-image:url(/logo.png)] [-webkit-mask-size:contain] [-webkit-mask-repeat:no-repeat] [-webkit-mask-position:center] transition-all duration-300 opacity-0 dark:opacity-100 group-hover:scale-105" />
+            </div>
+          </a>
           <p className="text-black/80 dark:text-white/40 max-w-sm font-light leading-relaxed text-sm">
             Building intelligent solutions that enhance efficiency and innovation through AI development and strategic marketing.
           </p>
