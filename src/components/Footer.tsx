@@ -1,0 +1,66 @@
+"use client";
+
+import { Sparkles, Mail, Phone, MapPin } from "lucide-react";
+
+export default function Footer() {
+  return (
+    <footer className="pt-24 md:pt-40 pb-16 px-4 sm:px-6 lg:px-8 border-t border-black/5 dark:border-white/5 bg-white dark:bg-black/50 backdrop-blur-3xl">
+      <div className="absolute inset-0 bg-gradient-to-t from-neon-purple/5 to-transparent pointer-events-none" />
+      
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 relative z-10">
+        
+        <div className="lg:col-span-1">
+          <div className="flex items-center gap-2 mb-8">
+            <Sparkles className="w-6 h-6 text-neon-cyan" />
+            <span className="font-bold tracking-tight text-2xl">Denzo Studios Pro</span>
+          </div>
+          <p className="text-black/80 dark:text-white/40 max-w-sm font-light leading-relaxed text-sm">
+            Building intelligent solutions that enhance efficiency and innovation through AI development and strategic marketing.
+          </p>
+        </div>
+
+        <div>
+          <h4 className="font-bold text-black dark:text-white text-sm uppercase tracking-[0.2em] mb-8">Services</h4>
+          <div className="flex flex-col gap-4 text-sm">
+            <a href="#ads" className="text-black/80 dark:text-white/40 hover:text-black dark:text-white transition-colors">Google & Meta Ads</a>
+            <a href="#seo" className="text-black/80 dark:text-white/40 hover:text-black dark:text-white transition-colors">SEO Optimization</a>
+            <a href="#ai" className="text-black/80 dark:text-white/40 hover:text-black dark:text-white transition-colors">AI Development</a>
+            <a href="#web" className="text-black/80 dark:text-white/40 hover:text-black dark:text-white transition-colors">Web Development</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 className="font-bold text-black dark:text-white text-sm uppercase tracking-[0.2em] mb-8">Company</h4>
+          <div className="flex flex-col gap-4 text-sm">
+            <a href="#about" className="text-black/80 dark:text-white/40 hover:text-black dark:text-white transition-colors">About Us</a>
+            <a href="#" className="text-black/80 dark:text-white/40 hover:text-black dark:text-white transition-colors">Careers</a>
+            <a href="#" className="text-black/80 dark:text-white/40 hover:text-black dark:text-white transition-colors">Privacy Policy</a>
+            <a href="#" className="text-black/80 dark:text-white/40 hover:text-black dark:text-white transition-colors">Terms & Conditions</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 className="font-bold text-black dark:text-white text-sm uppercase tracking-[0.2em] mb-8">Contact</h4>
+          <div className="flex flex-col gap-4 text-sm text-black/80 dark:text-white/40">
+            <a href="tel:8332002676" className="flex items-center gap-3 hover:text-black dark:text-white transition-colors">
+              <Phone className="w-4 h-4 text-neon-cyan" />
+              833-200-2676
+            </a>
+            <div className="flex items-center gap-3">
+              <Mail className="w-4 h-4 text-neon-purple" />
+              contact@denzostudios.com
+            </div>
+            <div className="flex items-center gap-3 italic">
+               Bilingual Support Available
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="max-w-7xl mx-auto mt-32 pt-10 border-t border-black/5 dark:border-white/5 flex flex-col md:flex-row justify-between items-center text-[10px] text-black/40 dark:text-white/20 uppercase tracking-[0.3em] font-bold">
+        <p>&copy; {new Date().getFullYear()} Denzo Studios. All rights reserved.</p>
+        <p className="mt-4 md:mt-0">Precision Engineering & Elite UI/UX</p>
+      </div>
+    </footer>
+  );
+}
