@@ -15,8 +15,8 @@ const links = [
       { name: "SEO Optimization", href: "/services/seo", icon: Search, color: "text-[#34C759]" },
       { name: "AI Development", href: "/services/ai-development", icon: BrainCircuit, color: "text-neon-cyan" },
       { name: "Call Center", href: "/services/call-center", icon: PhoneCall, color: "text-[#FF6B35]" },
-      { name: "Graphic Design", href: "#design", icon: Palette, color: "text-black/80 dark:text-white/50" },
-      { name: "Website Development", href: "#web", icon: Code2, color: "text-black/80 dark:text-white/50" },
+      { name: "Graphic Design", href: "/services/graphic-design", icon: Palette, color: "text-[#FF2D9B]" },
+      { name: "Website Development", href: "/services/website-development", icon: Code2, color: "text-[#4F46E5]" },
     ]
   },
   { name: "About Us", href: "#about" },
