@@ -12,7 +12,7 @@ const links = [
     subServices: [
       { name: "Google Ads", href: "/services/google-ads", icon: Sparkles, color: "text-neon-purple" },
       { name: "Meta Ads", href: "/services/meta-ads", icon: Globe, color: "text-neon-pink" },
-      { name: "SEO Optimization", href: "#seo", icon: Search, color: "text-black/90 dark:text-white/70" },
+      { name: "SEO Optimization", href: "/services/seo", icon: Search, color: "text-[#34C759]" },
       { name: "AI Development", href: "#ai", icon: BrainCircuit, color: "text-neon-cyan" },
       { name: "Call Center", href: "#call", icon: PhoneCall, color: "text-neon-pink" },
       { name: "Graphic Design", href: "#design", icon: Palette, color: "text-black/80 dark:text-white/50" },
