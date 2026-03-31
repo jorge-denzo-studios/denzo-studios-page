@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Sparkles, Phone, ChevronDown, Search, BrainCircuit, PhoneCall, Palette, Code2, Menu, X } from "lucide-react";
+import { Sparkles, Phone, ChevronDown, Search, BrainCircuit, PhoneCall, Palette, Code2, Menu, X, Globe } from "lucide-react";
 
 const links = [
   { name: "Home", href: "#" },
@@ -10,7 +10,8 @@ const links = [
     name: "Services", 
     href: "#services",
     subServices: [
-      { name: "Google & Meta Ads", href: "#ads", icon: Sparkles, color: "text-neon-purple" },
+      { name: "Google Ads", href: "/services/google-ads", icon: Sparkles, color: "text-neon-purple" },
+      { name: "Meta Ads", href: "/services/meta-ads", icon: Globe, color: "text-neon-pink" },
       { name: "SEO Optimization", href: "#seo", icon: Search, color: "text-black/90 dark:text-white/70" },
       { name: "AI Development", href: "#ai", icon: BrainCircuit, color: "text-neon-cyan" },
       { name: "Call Center", href: "#call", icon: PhoneCall, color: "text-neon-pink" },
