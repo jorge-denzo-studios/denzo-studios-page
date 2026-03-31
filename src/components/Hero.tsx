@@ -84,9 +84,9 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 1 }}
-          className="flex flex-col items-center justify-center"
+          className="w-full flex items-center justify-center"
         >
-          <a href="tel:8332002676" className="group/btn relative px-8 py-4 md:px-12 md:py-5 rounded-full font-bold text-lg md:text-xl overflow-hidden transition-all duration-700 hover:scale-[1.02] active:scale-[0.98] block shadow-[0_0_40px_rgba(52,199,89,0.15)] hover:shadow-[0_0_40px_rgba(0,122,255,0.25)] bg-[#1c1c1e] dark:bg-black/40 backdrop-blur-2xl border border-white/5">
+          <a href="tel:8332002676" className="group/btn relative w-full flex items-center justify-between px-5 py-3.5 rounded-full font-bold text-sm overflow-hidden transition-all duration-700 hover:scale-[1.02] active:scale-[0.98] shadow-[0_0_40px_rgba(52,199,89,0.15)] hover:shadow-[0_0_40px_rgba(0,122,255,0.25)] bg-[#1c1c1e] dark:bg-black/40 backdrop-blur-2xl border border-white/5 md:inline-flex md:w-auto md:justify-center md:gap-4 md:px-12 md:py-5 md:text-xl">
             
             {/* Spotlight Green Glow (Default) */}
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(52,199,89,0.2),transparent_60%)] opacity-100 group-hover/btn:opacity-0 transition-opacity duration-700 pointer-events-none" />
@@ -98,14 +98,12 @@ export default function Hero() {
             <div className="absolute inset-0 rounded-full border border-[#34C759]/60 opacity-100 group-hover/btn:opacity-0 transition-opacity duration-700 pointer-events-none" />
             <div className="absolute inset-0 rounded-full border border-[#007AFF]/60 opacity-0 group-hover/btn:opacity-100 transition-opacity duration-700 pointer-events-none" />
             
-            <span className="relative z-10 flex items-center justify-center gap-4 drop-shadow-md">
-              <span className="text-white tracking-wide transition-colors duration-700">REQUEST A DEMO</span>
+            <span className="relative z-10 text-white tracking-wide whitespace-nowrap transition-colors duration-700 drop-shadow-md">REQUEST A DEMO</span>
               
-              {/* Internal Mini-Pill for the Phone Number */}
-              <span className="px-4 py-1.5 rounded-full bg-[#34C759]/15 group-hover/btn:bg-[#007AFF]/15 text-[#34C759] group-hover/btn:text-[#007AFF] text-sm md:text-base font-semibold transition-colors duration-700 border border-[#34C759]/30 group-hover/btn:border-[#007AFF]/30 flex items-center gap-2">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#34C759] group-hover/btn:bg-[#007AFF] animate-pulse transition-colors duration-700" />
-                833-200-2676
-              </span>
+            {/* Internal Mini-Pill for the Phone Number */}
+            <span className="relative z-10 shrink-0 px-3 py-1.5 rounded-full bg-[#34C759]/15 group-hover/btn:bg-[#007AFF]/15 text-[#34C759] group-hover/btn:text-[#007AFF] text-sm font-semibold transition-colors duration-700 border border-[#34C759]/30 group-hover/btn:border-[#007AFF]/30 flex items-center gap-1.5 whitespace-nowrap md:px-4 md:text-base md:gap-2">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#34C759] group-hover/btn:bg-[#007AFF] animate-pulse transition-colors duration-700" />
+              833-200-2676
             </span>
           </a>
         </motion.div>

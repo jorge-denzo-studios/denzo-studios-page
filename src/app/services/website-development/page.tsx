@@ -203,12 +203,12 @@ export default function WebsiteDevelopmentPage() {
             >
               <a
                 href="tel:8332002676"
-                className="group/btn relative inline-flex items-center gap-4 px-8 py-4 md:px-10 md:py-5 rounded-full font-bold text-lg overflow-hidden transition-all duration-700 hover:scale-[1.02] active:scale-[0.98] shadow-[0_0_40px_rgba(79,70,229,0.15)] hover:shadow-[0_0_50px_rgba(79,70,229,0.35)] bg-[#1c1c1e] dark:bg-black/40 backdrop-blur-2xl border border-white/5"
+                className="group/btn relative w-full flex items-center justify-between px-5 py-3.5 rounded-full font-bold text-sm overflow-hidden md:inline-flex md:w-auto md:justify-start md:gap-4 md:px-8 md:py-4 lg:px-10 lg:py-5 md:text-lg transition-all duration-700 hover:scale-[1.02] active:scale-[0.98] shadow-[0_0_40px_rgba(79,70,229,0.15)] hover:shadow-[0_0_50px_rgba(79,70,229,0.35)] bg-[#1c1c1e] dark:bg-black/40 backdrop-blur-2xl border border-white/5"
               >
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(79,70,229,0.22),transparent_60%)] pointer-events-none" />
                 <div className="absolute inset-0 rounded-full border border-[#4F46E5]/50 pointer-events-none" />
-                <span className="relative z-10 text-white tracking-wide">BUILD MY WEBSITE</span>
-                <span className="relative z-10 px-4 py-1.5 rounded-full bg-[#4F46E5]/15 text-[#818CF8] text-sm font-semibold border border-[#4F46E5]/30 flex items-center gap-2">
+                <span className="relative z-10 text-white tracking-wide whitespace-nowrap">BUILD MY WEBSITE</span>
+                <span className="relative z-10 shrink-0 px-3 py-1.5 rounded-full whitespace-nowrap bg-[#4F46E5]/15 text-[#818CF8] text-sm font-semibold border border-[#4F46E5]/30 flex items-center gap-2">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#4F46E5] animate-pulse" />
                   833-200-2676
                 </span>
