@@ -20,7 +20,7 @@ const links = [
     ]
   },
   { name: "About Us", href: "/about-us" },
-  { name: "Contact", href: "#contact" },
+  { name: "Contact", href: "/contact" },
 ];
 
 export default function Navbar() {

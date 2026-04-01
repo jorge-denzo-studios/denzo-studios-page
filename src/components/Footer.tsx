@@ -34,7 +34,7 @@ export default function Footer() {
         <div>
           <h4 className="font-bold text-black dark:text-white text-sm uppercase tracking-[0.2em] mb-8">Company</h4>
           <div className="flex flex-col gap-4 text-sm">
-            <a href="#about" className="text-black/80 dark:text-white/40 hover:text-black dark:hover:text-white transition-colors">About Us</a>
+            <a href="/about-us" className="text-black/80 dark:text-white/40 hover:text-black dark:hover:text-white transition-colors">About Us</a>
             <a href="#" className="text-black/80 dark:text-white/40 hover:text-black dark:hover:text-white transition-colors">Careers</a>
             <a href="#" className="text-black/80 dark:text-white/40 hover:text-black dark:hover:text-white transition-colors">Privacy Policy</a>
             <a href="#" className="text-black/80 dark:text-white/40 hover:text-black dark:hover:text-white transition-colors">Terms & Conditions</a>
