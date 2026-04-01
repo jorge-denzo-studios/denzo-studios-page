@@ -8,7 +8,7 @@ const links = [
   { name: "Home", href: "/" },
   {
     name: "Services",
-    href: "#services",
+    href: "/#services",
     subServices: [
       { name: "Google Ads", href: "/services/google-ads", icon: Sparkles, color: "text-neon-purple" },
       { name: "Meta Ads", href: "/services/meta-ads", icon: Globe, color: "text-neon-pink" },

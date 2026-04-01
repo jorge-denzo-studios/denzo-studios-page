@@ -6,7 +6,10 @@ import { cn } from "@/lib/utils";
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
-  title: "Denzo Studios Pro | Neo",
+  title: {
+    template: "Denzo Studios | %s",
+    default: "Denzo Studios",
+  },
   description: "A cinematic AI digital platform.",
 };
 
