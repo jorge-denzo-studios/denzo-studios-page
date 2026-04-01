@@ -50,7 +50,7 @@ export default function Footer() {
             </a>
             <div className="flex items-center gap-3">
               <Mail className="w-4 h-4 text-neon-purple" />
-              contact@denzostudios.com
+              contact@denzostudiospro.com
             </div>
             <div className="flex items-center gap-3 italic">
                Bilingual Support Available

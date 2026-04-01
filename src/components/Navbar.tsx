@@ -19,7 +19,7 @@ const links = [
       { name: "Website Development", href: "/services/website-development", icon: Code2, color: "text-[#4F46E5]" },
     ]
   },
-  { name: "About Us", href: "#about" },
+  { name: "About Us", href: "/about-us" },
   { name: "Contact", href: "#contact" },
 ];
 
