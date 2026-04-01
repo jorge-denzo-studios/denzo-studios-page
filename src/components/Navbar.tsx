@@ -5,9 +5,9 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Sparkles, Phone, ChevronDown, Search, BrainCircuit, PhoneCall, Palette, Code2, Menu, X, Globe } from "lucide-react";
 
 const links = [
-  { name: "Home", href: "#" },
-  { 
-    name: "Services", 
+  { name: "Home", href: "/" },
+  {
+    name: "Services",
     href: "#services",
     subServices: [
       { name: "Google Ads", href: "/services/google-ads", icon: Sparkles, color: "text-neon-purple" },
@@ -38,13 +38,12 @@ export default function Navbar() {
 
   return (
     <>
-      <motion.nav 
+      <motion.nav
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1] }}
-        className={`fixed top-0 left-0 w-full z-[100] px-4 py-4 sm:px-6 lg:px-8 flex justify-between items-center transition-all duration-500 ${
-          scrolled || isMobileMenuOpen ? "bg-white dark:bg-black/80 backdrop-blur-2xl border-b border-black/10 dark:border-white/10" : "bg-transparent"
-        }`}
+        className={`fixed top-0 left-0 w-full z-[100] px-4 py-4 sm:px-6 lg:px-8 flex justify-between items-center transition-all duration-500 ${scrolled || isMobileMenuOpen ? "bg-white dark:bg-black/80 backdrop-blur-2xl border-b border-black/10 dark:border-white/10" : "bg-transparent"
+          }`}
       >
         {/* Logo */}
         <a href="/" className="flex items-center relative z-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-neon-cyan rounded-md group">
@@ -57,14 +56,14 @@ export default function Navbar() {
         {/* Desktop Links */}
         <div className="hidden lg:flex items-center gap-8 text-[10px] font-bold text-black/80 dark:text-white/60 uppercase tracking-[0.2em]">
           {links.map((link) => (
-            <div 
-              key={link.name} 
+            <div
+              key={link.name}
               className="relative group py-2"
               onMouseEnter={() => link.subServices && setIsServicesOpen(true)}
               onMouseLeave={() => link.subServices && setIsServicesOpen(false)}
             >
-              <a 
-                href={link.href} 
+              <a
+                href={link.href}
                 className="hover:text-black dark:hover:text-white transition-colors flex items-center gap-1"
               >
                 {link.name}
@@ -90,7 +89,7 @@ export default function Navbar() {
                             href={sub.href}
                             className="p-4 rounded-2xl hover:bg-black/5 dark:hover:bg-white/5 transition-all text-black/80 dark:text-white/50 hover:text-black dark:hover:text-white flex flex-col gap-3 group/item border border-transparent hover:border-black/10 dark:hover:border-white/10"
                           >
-                            <motion.div 
+                            <motion.div
                               whileHover={{ scale: 1.1, rotate: 5 }}
                               className={`w-10 h-10 rounded-xl bg-black/5 dark:bg-white/5 flex items-center justify-center transition-all group-hover/item:bg-black/10 dark:group-hover/item:bg-white/10 ${sub.color}`}
                             >
@@ -114,7 +113,7 @@ export default function Navbar() {
             <Phone className="w-4 h-4 text-neon-cyan" />
             833-200-2676
           </a>
-          <a 
+          <a
             href="tel:8332002676"
             className="text-[10px] font-bold uppercase tracking-widest bg-white text-black hover:bg-white/90 px-6 py-2.5 rounded-full transition-all active:scale-95 shadow-[0_0_20px_rgba(0,0,0,0.1)]"
           >
@@ -122,19 +121,19 @@ export default function Navbar() {
           </a>
 
           {/* Mobile Menu Toggle */}
-          <button 
+          <button
             onClick={toggleMobileMenu}
             className="lg:hidden w-10 h-10 flex flex-col items-center justify-center gap-1.5 focus:outline-none"
           >
-            <motion.span 
+            <motion.span
               animate={{ rotate: isMobileMenuOpen ? 45 : 0, y: isMobileMenuOpen ? 7.5 : 0 }}
               className="w-6 h-0.5 bg-black dark:bg-white rounded-full transition-colors duration-300"
             />
-            <motion.span 
+            <motion.span
               animate={{ opacity: isMobileMenuOpen ? 0 : 1 }}
               className="w-6 h-0.5 bg-black dark:bg-white rounded-full transition-colors duration-300"
             />
-            <motion.span 
+            <motion.span
               animate={{ rotate: isMobileMenuOpen ? -45 : 0, y: isMobileMenuOpen ? -7.5 : 0 }}
               className="w-6 h-0.5 bg-black dark:bg-white rounded-full transition-colors duration-300"
             />
@@ -155,18 +154,18 @@ export default function Navbar() {
             <div className="flex flex-col gap-8 pb-12">
               {links.map((link) => (
                 <div key={link.name} className="flex flex-col gap-6">
-                  <a 
+                  <a
                     href={link.href}
                     onClick={() => !link.subServices && setIsMobileMenuOpen(false)}
                     className="text-3xl font-bold tracking-tighter hover:text-neon-cyan transition-colors"
                   >
                     {link.name}
                   </a>
-                  
+
                   {link.subServices && (
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 ml-4">
                       {link.subServices.map((sub) => (
-                        <a 
+                        <a
                           key={sub.name}
                           href={sub.href}
                           onClick={() => setIsMobileMenuOpen(false)}
@@ -182,7 +181,7 @@ export default function Navbar() {
                   )}
                 </div>
               ))}
-              
+
               <div className="mt-8 pt-8 border-t border-black/10 dark:border-white/10 flex flex-col gap-6">
                 <a href="tel:8332002676" className="flex items-center gap-4 text-2xl font-bold tracking-tight">
                   <Phone className="w-6 h-6 text-neon-cyan" />
