@@ -396,11 +396,11 @@ export default function SEOPage() {
               </p>
               <a
                 href="tel:8332002676"
-                className="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-[#34C759] text-white font-bold text-sm uppercase tracking-widest hover:bg-[#2db34e] transition-all hover:scale-[1.02] active:scale-[0.98] shadow-[0_0_30px_rgba(52,199,89,0.4)]"
+                className="w-full flex items-center justify-between px-5 py-3.5 rounded-full md:inline-flex md:w-auto md:justify-start md:gap-3 md:px-8 md:py-4 bg-[#34C759] text-white font-bold text-sm uppercase tracking-widest hover:bg-[#2db34e] transition-all hover:scale-[1.02] active:scale-[0.98] shadow-[0_0_30px_rgba(52,199,89,0.4)]"
               >
                 Start Your SEO Journey
                 <span className="opacity-60">→</span>
-                <span className="bg-white/20 text-white px-3 py-1 rounded-full text-xs font-semibold">
+                <span className="shrink-0 bg-white/20 text-white px-3 py-1 rounded-full text-xs font-semibold whitespace-nowrap">
                   833-200-2676
                 </span>
               </a>
